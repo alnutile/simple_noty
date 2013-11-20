@@ -1,9 +1,15 @@
-##Simple Library/Module to setup noty and make it so you can use it in your 
-javascrit.
+##Simple Library/Module to setup noty and make it so you can use it in your javascript.
 
 1. Sets a drupal setting as Drupal.settings.simple_noty.active
 
-2. You can then call to 
+2. Your javascript can check in your javascript
+
+```
+Drupal.settings.simple_noty.active
+``` 
+to see if you can use it.
+
+3. You can then call to 
 ```
 var n = noty({text: 'noty - a jquery notification library!'});
 ```
