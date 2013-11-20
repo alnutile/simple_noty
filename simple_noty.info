@@ -1,0 +1,5 @@
+name = Simple Noty
+description = Simple Attempt to make the noty api available
+core = 7.x
+dependencies[] = libraries (>=2.x)
+

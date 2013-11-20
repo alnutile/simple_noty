@@ -1,0 +1,16 @@
+<?php
+/**
+ * @file
+ * put noty in place
+ */
+
+function simple_noty_page_build(&$page) {
+    $path = drupal_get_path('module', 'simple_noty');
+    $items['active'] = 1;
+    drupal_add_js(array('simple_noty' => $items), array('type' => 'setting', 'scope' => JS_DEFAULT));
+    $libraries = libraries_get_path('noty_library');
+    drupal_add_js($libraries . '/js/noty/jquery.noty.js');
+    drupal_add_js($libraries . '/js/noty/layouts/top.js');
+    drupal_add_js($libraries . '/js/noty/themes/default.js');
+    drupal_add_js($path . '/js/noty_settings.js');
+}
